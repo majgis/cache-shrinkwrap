@@ -41,6 +41,7 @@
   "keywords": [],
   "dependencies": {
     "nopt": "2.2.0",
-    "findup-sync": "0.1.2"
+    "findup-sync": "0.1.2",
+    "npmconf": "0.1.13"
   }
 }
