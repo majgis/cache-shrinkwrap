@@ -62,6 +62,7 @@ through npm's api in a single session as follows:  `npm.commands.cache(['add', '
 it is much faster than trying to execute multiple `npm cache add name@version` statements.
 
 ##API
+
 Although only intended for command line usage, there is a [public api](https://github.com/slchackers/cache-shrinkwrap/blob/master/lib/cache-shrinkwrap.js).
 
 ```javascript
@@ -76,13 +77,15 @@ cache_shrinkwrap.addFilePath('project/nsw.json');
   3. [StackOverflow  - Can dependencies be included when using npm cache add?](http://stackoverflow.com/questions/22215606/can-dependencies-be-included-when-using-npm-cache-add)
 
 ## License
+
 Copyright (c) 2014 SLCHackers
 Licensed under the MIT license.
 
 ## Release History
-0.1.3 - remove console statement reporting undefined
-0.1.2 - removed npm-shrinkwrap.json to prevent installation of dev dependencies
-0.1.1 - Documentation was updated and the public api was simplified
-0.1.0 - Basic loading of npm-shrinkwrap.json for populating the npm cache
+
+* 0.1.3 - remove console statement reporting undefined
+* 0.1.2 - removed npm-shrinkwrap.json to prevent installation of dev dependencies
+* 0.1.1 - Documentation was updated and the public api was simplified
+* 0.1.0 - Basic loading of npm-shrinkwrap.json for populating the npm cache
 
 
