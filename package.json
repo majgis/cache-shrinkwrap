@@ -1,6 +1,6 @@
 {
   "name": "cache-shrinkwrap",
-  "description": "Add alljson to the npm cache.",
+  "description": "adds all dependencies, including child dependencies, contained in an npm-shrinkwrap.json file.",
   "version": "0.1.0",
   "homepage": "https://github.com/slchackers/cache-shrinkwrap",
   "author": {

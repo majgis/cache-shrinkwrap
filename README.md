@@ -1,26 +1,26 @@
-# cache-shrinkwrap [![Build Status](https://secure.travis-ci.org/maj/cache-shrinkwrap.png?branch=master)](http://travis-ci.org/maj/cache-shrinkwrap)
 
-Add alljson to the npm cache.
+This module is a utility for system administrators which is intended to be installed globally.
+
+It adds all dependencies, including child dependencies, contained in an npm-shrinkwrap.json file.
+
+Read the documentation for [npm-shrinkwrap](https://www.npmjs.org/doc/cli/npm-shrinkwrap.html) for specifics about
+generating this file.
 
 ## Getting Started
-Install the module with: `npm install cache-shrinkwrap`
-
-```javascript
-var cache_shrinkwrap = require('cache-shrinkwrap');
-cache_shrinkwrap.awesome(); // "awesome"
-```
-
-## Documentation
-_(Coming soon)_
+Install the module with: `npm install -g cache-shrinkwrap`
 
 ## Examples
-_(Coming soon)_
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+```bash
+# Look in current or parent directory for npm-shrinkwrap.json
+cache-shrinkwrap
+
+# Specify the path to a file created by npm shrinkwrap command
+cache-shrinkwrap wraps/npm-shrinkwrap-2014-01-12.json
+```
 
 ## Release History
-_(Nothing yet)_
+0.1.0 - basic loading of npm-shrinkwrap.json for populating the npm cache
 
 ## License
 Copyright (c) 2014 SLCHackers  
