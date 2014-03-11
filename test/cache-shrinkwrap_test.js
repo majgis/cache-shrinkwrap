@@ -22,15 +22,32 @@ var cache_shrinkwrap = require('../lib/cache-shrinkwrap.js');
     test.ifError(value)
 */
 
-exports['awesome'] = {
+var dependencies = {
+  "nopt": {
+    "version": "2.2.0",
+    "from": "nopt@",
+    "dependencies": {
+      "abbrev": {
+        "version": "1.0.4",
+        "from": "abbrev@1"
+      }
+    }
+  }
+};
+var expected = [
+  'abbrev@1.0.4',
+  'nopt@2.2.0'
+];
+
+exports['getVersionsFromDependencies'] = {
   setUp: function(done) {
     // setup here
     done();
   },
-  'no args': function(test) {
+  'dependencies': function(test) {
     test.expect(1);
     // tests here
-    test.equal(cache_shrinkwrap.awesome(), 'awesome', 'should be awesome.');
+    test.deepEqual(cache_shrinkwrap.getVersionsFromDependencies(dependencies), expected, 'should be array with two versions');
     test.done();
   }
 };
