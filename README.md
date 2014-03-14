@@ -1,8 +1,8 @@
-#cache-shrinkwrap
+#Purpose
 
-This module is a utility for system administrators which is intended to be installed globally.
+This module is a utility for system administrators which is intended to be installed globally and used at command line.
 
-It adds all dependencies, including child dependencies, contained in an npm-shrinkwrap.json file.
+It adds all dependencies, including child dependencies, contained in an npm-shrinkwrap.json file to the npm cache.
 
 Read the documentation for [npm-shrinkwrap](https://www.npmjs.org/doc/cli/npm-shrinkwrap.html) for specifics about
 generating this file.
@@ -11,7 +11,7 @@ generating this file.
 Install the module with:
 
 ```bash
-npm install -g cache-shrinkwrap`
+npm install -g cache-shrinkwrap
 ```
 
 ## Documentation
@@ -83,9 +83,10 @@ Licensed under the MIT license.
 
 ## Release History
 
-* 0.1.4 - added missing npmconf module
-* 0.1.3 - remove console statement reporting undefined
-* 0.1.2 - removed npm-shrinkwrap.json to prevent installation of dev dependencies
+* 0.2.0 - Added report of processed and failures; exit code of 1 if any failures
+* 0.1.4 - Added missing npmconf module
+* 0.1.3 - Removed console statement reporting undefined
+* 0.1.2 - Removed npm-shrinkwrap.json to prevent installation of dev dependencies
 * 0.1.1 - Documentation was updated and the public api was simplified
 * 0.1.0 - Basic loading of npm-shrinkwrap.json for populating the npm cache
 

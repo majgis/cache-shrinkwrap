@@ -2,15 +2,16 @@
 
 'use strict';
 
-process.title='cache-shrinkwrap';
+process.title = 'cache-shrinkwrap';
 
 var cs = require('../lib/cache-shrinkwrap');
 var findup = require('findup-sync');
 var shrinkwrapPath = findup('npm-shrinkwrap.json') || process.argv[2];
 
-if (shrinkwrapPath){
-  console.log('Using: ', shrinkwrapPath);
+if (shrinkwrapPath) {
+  console.log('\n  Shrinkwrap File: ', shrinkwrapPath);
+  cs.setLogging(true);
   cs.addFilePath(shrinkwrapPath);
-}else{
+} else {
   console.log('shrinkwrap.json not found');
 }

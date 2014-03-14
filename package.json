@@ -1,7 +1,12 @@
 {
   "name": "cache-shrinkwrap",
-  "description": "Add all dependencies contained in an npm-shrinkwrap.json file to npm cache.",
-  "version": "0.1.4",
+  "description": "Add all dependencies contained in an npm-shrinkwrap.json file to the npm cache.",
+  "keywords": [
+    "npm",
+    "shrinkwrap",
+    "cache"
+  ],
+  "version": "0.2.0",
   "homepage": "https://github.com/slchackers/cache-shrinkwrap",
   "author": {
     "name": "SLCHackers",
@@ -38,7 +43,6 @@
     "grunt-contrib-watch": "0.5.3",
     "grunt": "0.4.3"
   },
-  "keywords": [],
   "dependencies": {
     "nopt": "2.2.0",
     "findup-sync": "0.1.2",
