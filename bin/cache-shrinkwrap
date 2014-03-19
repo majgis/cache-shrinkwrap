@@ -6,7 +6,7 @@ process.title = 'cache-shrinkwrap';
 
 var cs = require('../lib/cache-shrinkwrap');
 var findup = require('findup-sync');
-var shrinkwrapPath = findup('npm-shrinkwrap.json') || process.argv[2];
+var shrinkwrapPath = process.argv[2] || findup('npm-shrinkwrap.json');
 
 if (shrinkwrapPath) {
   console.log('\n  Shrinkwrap File: ', shrinkwrapPath);
