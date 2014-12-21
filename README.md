@@ -81,14 +81,4 @@ cache_shrinkwrap.addFilePath('project/nsw.json');
 Copyright (c) 2014 SLCHackers
 Licensed under the MIT license.
 
-## Release History
-
-* 0.2.1 - Corrected issue with command line argument not having priority
-* 0.2.0 - Added report of processed and failures; exit code of 1 if any failures
-* 0.1.4 - Added missing npmconf module
-* 0.1.3 - Removed console statement reporting undefined
-* 0.1.2 - Removed npm-shrinkwrap.json to prevent installation of dev dependencies
-* 0.1.1 - Documentation was updated and the public api was simplified
-* 0.1.0 - Basic loading of npm-shrinkwrap.json for populating the npm cache
-
 
